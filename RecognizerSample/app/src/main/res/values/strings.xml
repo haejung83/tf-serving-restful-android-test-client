@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">CardRecognizerSample</string>
+
+    <string name="title_text_response">Response</string>
+    <string name="title_text_response_placeholder">None</string>
+
+    <string name="title_text_camera_class">Class</string>
+    <string name="title_text_camera_probability">Probability</string>
+
+    <string name="title_button_card_1">Req Card 1</string>
+    <string name="title_button_card_8">Req Card 8</string>
+    <string name="title_button_camera">Req with Camera</string>
+</resources>

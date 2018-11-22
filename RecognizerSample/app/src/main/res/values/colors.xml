@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#579be9</color>
+    <color name="colorPrimaryDark">#30629f</color>
+    <color name="colorAccent">#ffb340</color>
+
+    <!-- MainActivity -->
+    <color name="colorBrightYellow">#99FFFF00</color>
+
+    <!-- CameraActivity -->
+    <color name="colorResultBackground">#39FFFFFF</color>
+    <color name="colorFontScoreNormal">#333333</color>
+    <color name="colorFontScoreHighlight">#11AA11</color>
+</resources>

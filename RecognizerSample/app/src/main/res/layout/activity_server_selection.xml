@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.ServerSelectionActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <TextView
+        android:id="@+id/textTitleTargetServer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Target Server"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editHost"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:ems="10"
+        android:hint="192.168.0.165"
+        android:inputType="textUri"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textTitleHost" />
+
+    <Button
+        android:id="@+id/btnLaunch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="Launch"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textTitleHost"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:text="Host"
+        app:layout_constraintStart_toStartOf="@+id/editHost"
+        app:layout_constraintTop_toBottomOf="@+id/textTitleTargetServer" />
+
+    <TextView
+        android:id="@+id/textTitlePort"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Port"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textTitleHost"
+        app:layout_constraintStart_toStartOf="@+id/editPort" />
+
+    <EditText
+        android:id="@+id/editPort"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:ems="10"
+        android:hint="8501"
+        android:inputType="number"
+        app:layout_constraintBaseline_toBaselineOf="@+id/editHost"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/editHost" />
+
+    <TextView
+        android:id="@+id/textTitleModelName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="Model Name"
+        app:layout_constraintStart_toStartOf="@+id/editModelName"
+        app:layout_constraintTop_toBottomOf="@+id/editHost" />
+
+    <TextView
+        android:id="@+id/textTitleModelVersion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Model Version"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textTitleModelName"
+        app:layout_constraintStart_toStartOf="@+id/editModelVersion" />
+
+    <EditText
+        android:id="@+id/editModelName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:ems="10"
+        android:hint="half_plus_two"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/editHost"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textTitleModelName" />
+
+    <EditText
+        android:id="@+id/editModelVersion"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:hint="Lastest (Blank)"
+        android:inputType="numberDecimal"
+        app:layout_constraintBaseline_toBaselineOf="@+id/editModelName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/editPort" />
+
+    <TextView
+        android:id="@+id/textTitleThreshold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:text="Threshold"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editModelName" />
+
+    <SeekBar
+        android:id="@+id/seekbarThreshold"
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:max="20"
+        android:progress="10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textTitleThreshold" />
+
+    <TextView
+        android:id="@+id/textThresholdValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="50"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textTitleThreshold"
+        app:layout_constraintStart_toEndOf="@+id/textTitleThreshold" />
+
+    <TextView
+        android:id="@+id/textTitleThresholdPercent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:text="%"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textThresholdValue"
+        app:layout_constraintStart_toEndOf="@+id/textThresholdValue" />
+</android.support.constraint.ConstraintLayout>
